@@ -2,7 +2,9 @@
 CONTACTOS = {
     "miguel": "juan.ejemplo@gmail.com",
     "": "",
-    "ingeniero": "cmartinezb10@miumg.edu.gt"
+    "ingeniero": "cmartinezb10@miumg.edu.gt",
+    "": "",
+    "juan": "juanprezmuralles@gmail.com",
 }
 
 def obtener_correo(nombre):
