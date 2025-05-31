@@ -53,5 +53,11 @@ def procesar_comando(comando):
 
         return enviar_whatsapp(numero, mensaje)
 
+    elif "gemini" in comando or "gemini" in comando:
+        if any(palabra in comando for palabra in ["entrar", "activar", "usar", "consultar"]):
+            return consultar_gemini("consultar Gemini")
+        else:
+            return "Hola, soy Gemini. ¿En qué puedo ayudarte?"
+
     else:
         return consultar_gemini(comando)
