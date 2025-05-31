@@ -6,7 +6,9 @@ from modules.youtube_player import reproducir_youtube
 from modules.whatsapp_sender import enviar_whatsapp
 from modules.gemini_connector import consultar_gemini
 
+from modules.contacts import obtener_correo
 from modules.voice_output import speak
+
 from modules.voice_input import escuchar_comando
 
 def procesar_comando(comando):
@@ -24,15 +26,16 @@ def procesar_comando(comando):
 
     elif "correo" in comando:
         speak("¿A quién deseas enviar el correo?")
-        destinatario = escuchar_comando()
+        nombre = escuchar_comando()
+        destinatario = obtener_correo(nombre)
 
         speak("¿Cuál es el asunto del correo?")
         asunto = escuchar_comando()
 
         speak("¿Qué deseas escribir en el cuerpo del correo?")
-        cuerpo = escuchar_comando()
+        mensaje = escuchar_comando()
 
-        return enviar_correo(destinatario, asunto, cuerpo)
+        return enviar_correo(destinatario, asunto, mensaje)
 
     elif "abrir" in comando:
         speak("¿Qué aplicación deseas abrir?")
