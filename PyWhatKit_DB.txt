@@ -28,3 +28,8 @@ Time: 6:27
 Phone Number: + 502 49 99 18 90
 Message: segunda prueba del proyecto
 --------------------
+Date: 31/5/2025
+Time: 9:25
+Phone Number: + 502 32 08 57 66
+Message: esto es una prueba del proyecto de Inteligencia Artificial verdadera
+--------------------
